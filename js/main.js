@@ -54,6 +54,7 @@ var checkPressOverlay = function checkPressOverlay(e) {
 };
 
 var replaceImage = function replaceImage(img) {
+  console.log(img.src);
   imgModal.src = img.src;
   imgModal.alt = img.alt;
   currentImg = img;
@@ -65,7 +66,6 @@ var openModal = function openModal(e) {
   modalCloseBtns.forEach(function (btn) {
     return btn.addEventListener('click', closeModal);
   });
-  currentImg = img;
   replaceImage(img);
 };
 
