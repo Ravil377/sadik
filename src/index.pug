@@ -5,257 +5,320 @@ append variables
     - var pageClass = 'homepage'
     - var menuHref = '/'
 
-block top-position
-    section.top-position
-        .module.d-flex
-            .container-xxl
-                img.img-fluid.module__image.d-md-none(src="./images/man1.png" alt="Мужчина")
-                .module__title-container
-                    .module__title-content
-                        h1.module__title ИССЛЕДОВАНИЕ СКВАЖИН:
-                            span ЦЕЛЕПОЛАГАНИЕ 
-                                +icon('arrow-right')
-                            span ТЕХНОЛОГИИ
-                                +icon('arrow-right')
-                            span ЭФФЕКТ
-                        .module__address 
-                            +icon('location')
-                            | Республика Башкортостан, г.&nbsp;Уфа,&nbsp;ул.&nbsp;Ленина&nbsp;25/29, 
-                            span гостиничный комплекс «Башкортостан»
-                //- .module__logo-container.d-flex.mb-30.flex-sm-row.flex-column
-                    //- img.img-fluid.module__logo(src="./images/logo-color.png" alt="Башнефть")
-                    .module__date.mt-20.mt-sm-0 15-16 июня 
-                        span 2022
-                
-block partition
-    section.partition#partition
-        .container-xxl
-            h2.partition__title.title СЕКЦИИ 
-                span конференции
-            .partition__content.d-flex.col-lg-6.gap-5.flex-lg-row.flex-column
-                a(href="#section1").partition_block
-                    .partition_block-title 1 СЕКЦИЯ
-                    .partition_block-description Результаты исследований как инструмент принятия решений при управлении разработкой месторождений
-                    img.img-fluid.partition_block-image(src="./images/woman.png" alt="Девушка")
-                a(href="#section2").partition_block
-                    .partition_block-title 2 СЕКЦИЯ
-                    .partition_block-description ГИС и Петрофизика
-                    img.img-fluid.partition_block-image(src="./images/petrolium.png" alt="Земля в разрезе")
-block schedule
-    section.schedule#schedule
-        //- img.img-fluid.schedule__image(src="./images/bashneft-left-logo.png" alt="Логотип Башнефти")
-        .container-xxl.schedule__container
-            h2.schedule__title.title Программа
-            p.schedule__description 14 июня (вторник) 
-                span 12:00 - 16:00 - Заезд участников
-            .schedule__tabs.d-flex.col-md-6.gap-md-5.flex-md-row.flex-column.gap-4
-                div(data-day='1').schedule__tab.d-flex.justify-content-center.schedule__tab_active
-                    +icon('schedule-icon')
-                    p I день
-                        span 15 июня, среда
-                div(data-day='2').schedule__tab
-                    +icon('schedule-icon')
-                    p II день
-                        span 16 июня, четверг
-            .schedule__tab-content.schedule__tab-content_active#1
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 08:00 - 09:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Регистрация участников
-                .schedule__content.d-flex
-                    .schedule__subject-title.col-12.schedule__text ПЛЕНАРНОЕ ЗАСЕДАНИЕ
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 09:00 - 09:10
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Инструктаж по технике безопасности
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 09:10 - 09:30
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Приветственное слово
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 09:30 - 10:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Политика Компании в области импортозамещения ГИС
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 10:00 - 10:40
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Собственный высокотехнологичный сервис ГИС в НК «Роснефть»
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 10:40 - 11:10
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text КОФЕ-БРЕЙК
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 11:10 - 11:50
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Вызовы при ГГР и области ГИС
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 11:50 - 12:20
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Развитие исследований на шельфовых месторождениях
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 12:20 - 13:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Научно-технический потенциал Компании и импортозамещения в области LWD
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 13:00 - 14:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text ОБЕД
-                .schedule__content.d-flex#section1
-                    .schedule__subject-title.col-12.schedule__text СЕКЦИЯ №1 «Результаты исследований как инструмент принятия решений при управлении разработкой месторождений»
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:00 - 14:40
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Систематизация и обработка исследовательстких данных. Результаты ЦИП-222
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:40 - 15:20
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text СТПК как инструмент для увеличения эффективности исследовательских программ
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 15:20 - 16:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text КОФЕ-БРЕЙК
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:00 - 16:40
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Малозатратные ГДИС на зрелых месторождениях
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:40 - 17:20
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Автоматизация проведения глубинных исследований при контроле за разработкой
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 17:20 - 18:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Подведение итогов работы секции
-                .schedule__content.d-flex#section2
-                    .schedule__subject-title.col-12.schedule__text СЕКЦИЯ №2 «ГИС и Петрофизика»
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:00 - 14:40
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Импортозамещение хайтек аппаратуры ГИС: результаты полевых работ в сравнении с импортными аналогами
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:40 - 15:20
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Информационная безопасность Компании: где интерпретировать и хранить данные исследований
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 15:20 - 16:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text КОФЕ-БРЕЙК
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:00 - 16:40
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Разработка и внедрение инструкции по использованию хайтек ГИС
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:40 - 17:20
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Вызовы при ГРР и магистральных проектах Компании
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 17:20 - 18:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Подведение итогов работы секции
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 18:30
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Ужин
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 19:30
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Эксурсионная программа
-            .schedule__tab-content#2
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 08:00 - 09:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Регистрация участников
-                .schedule__content.d-flex
-                    .schedule__subject-title.col-12.schedule__text ПЛЕНАРНОЕ ЗАСЕДАНИЕ
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 09:00 - 09:10
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Инструктаж по технике безопасности
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 09:10 - 09:30
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Приветственное слово
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 09:30 - 10:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Политика Компании в области импортозамещения ГИС
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 10:00 - 10:40
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Собственный высокотехнологичный сервис ГИС в НК «Роснефть»
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 10:40 - 11:10
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text КОФЕ-БРЕЙК
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 11:10 - 11:50
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Вызовы при ГГР и области ГИС
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 11:50 - 12:20
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Развитие исследований на шельфовых месторождениях
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 12:20 - 13:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Научно-технический потенциал Компании и импортозамещения в области LWD
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 13:00 - 14:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text ОБЕД
-                .schedule__content.d-flex#section3
-                    .schedule__subject-title.col-12.schedule__text СЕКЦИЯ №1 «Результаты исследований как инструмент принятия решений при управлении разработкой месторождений»
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:00 - 14:40
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Систематизация и обработка исследовательстких данных. Результаты ЦИП-222
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:40 - 15:20
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text СТПК как инструмент для увеличения эффективности исследовательских программ
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 15:20 - 16:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text КОФЕ-БРЕЙК
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:00 - 16:40
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Малозатратные ГДИС на зрелых месторождениях
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:40 - 17:20
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Автоматизация проведения глубинных исследований при контроле за разработкой
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 17:20 - 18:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Подведение итогов работы секции
-                .schedule__content.d-flex#section4
-                    .schedule__subject-title.col-12.schedule__text СЕКЦИЯ №2 «ГИС и Петрофизика»
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:00 - 14:40
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Импортозамещение хайтек аппаратуры ГИС: результаты полевых работ в сравнении с импортными аналогами
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:40 - 15:20
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Информационная безопасность Компании: где интерпретировать и хранить данные исследований
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 15:20 - 16:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text КОФЕ-БРЕЙК
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:00 - 16:40
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Разработка и внедрение инструкции по использованию хайтек ГИС
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:40 - 17:20
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Вызовы при ГРР и магистральных проектах Компании
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 17:20 - 18:00
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Подведение итогов работы секции
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 18:30
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Ужин
-                .schedule__content.d-flex
-                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 19:30
-                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Эксурсионная программа
+block welcome 
+    section.welcome 
+        .container-xxl.welcome__container
+            .welcome__title  
+                | Частный детский&nbsp;садик в&nbsp;крылатском
+                span Детский садик полного и неполного пребывания на Крылатская ул., 40, стр. 74
+                a(href="#form") 
+                    | ЗАПИСАТЬСЯ В САДИК
+                    +icon('arrow-right-long-solid')
+            .welcome__image
+                img(src='./images/chs-2338-scaled.jpeg' alt="Частный детский садик в крылатском")
+block we-are-glad 
+    section.we-are-glad 
+        .container-xxl.we-are-glad__container
+            .we-are-glad__bg
+            p Мы рады помогать каждому малышу развивать личность, навыки общения с другими. На занятиях мы учимся выступать, изучаем английский, занимаемся спортом. Наши педагоги умеют заинтересовать, научить и всегда поддержат.
+block group
+    section.group 
+        .container-xxl.group__container
+            .group__item.col-md
+                img(src="./images/kid1__1.svg" alt="Средняя группа")
+                | Средняя группа
+                span Малыши 
+                    strong 1.5-3 лет
+            .group__item.col-md
+                img(src='./images/kid2__1_.svg' alt="Старшая группа")
+                | Старшая группа
+                span Малыши 
+                    strong 3-7 лет
+block stay
+    section.stay
+        .container-xxl.stay__container
+            h2.stay__title.title Формы пребывания в саду
+            p.stay__description.desc Обучающие занятия в утреннее и дневное время. Формы обучения отличаются количеством часов, проведенных в садике.
+            .stay__content.d-flex.justify-content-between.d-flex.flex-lg-row.flex-column
+                .stay__item.col
+                    .stay__item-day 
+                        p
+                            | Неполный день<br>
+                            | 08:00 - 13:00
+                    .stay__item-schedule
+                        | Завтрак 8:00 - 8:20<br>
+                        | Занятия и игры 8:20 - 9:00<br>
+                        | Прогулка 9:00 - 10:30<br>
+                        | Обед 10:30 - 11:30<br>
+                        | Тихий час 11:30 - 12:00<br>
+                        | Занятия и игры 12:00 - 13:00<br>
+                        | Полдник 13:00
+                    a(href="#form") Подать заявку
+                .stay__item.col.mt-40.mt-lg-0
+                    .stay__item-day 
+                        p
+                            | Полный день<br>
+                            | 07:30 - 19:30
+                    .stay__item-schedule
+                        | Завтрак 7:30 - 8:00<br>
+                        | Занятия и игры 8:00 - 9:00<br>
+                        | Прогулка 9:00 - 10:30<br>
+                        | Обед 10:30 - 11:30<br>
+                        | Тихий час 11:30 - 12:00<br>
+                        | Занятия и игры 12:00 - 13:00<br>
+                        | Полдник 13:00 - 14:00<br>
+                        | Прогулка 14:00 - 15:00<br>
+                        | Занятия и игры 15:00 - 16:00<br>
+                        | Ужин 16:00 - 17:00<br>
+                        | Занятия и игры 17:00 - 19:30
+                    a(href="#form") Подать заявку
+block gallery 
+    section.gallery 
+        .container-xxl.gallery__container
+            h2.gallery__title.title Фото галерея
+            .gallery__list
+                img(src="./images/chs-2338-scaled.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_24.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_25.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_26.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_22.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_27.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_28.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_29.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_30.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_31.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_32.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_33.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_34.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_35.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_37.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_38.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_39.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_40.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/XXXL_41.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/chs-2242-1-scaled.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/chs-2238-scaled.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/chs-2255-scaled.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/chs-2269-scaled.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/chs-2275-scaled.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/chs-2257-1-scaled.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/chs-2271-scaled.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/chs-2299-scaled.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/chs-2298-scaled.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/chs-2335-1-scaled.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/chs-2326-scaled.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/chs-2320-scaled.jpeg" alt='фотография' data-id="openmodal")
+                img(src="./images/chs-2359-scaled.jpeg" alt='фотография' data-id="openmodal")
+block lessons
+    section.lessons
+        .container-xxl.lessons__container
+            h2.title Занятия
+            p.desc На занятиях мы учим детей общаться в группе, заводить друзей, свободно выражать свои мысли. Основам иностранного языка, математики, физическим упражнениям.
+            ul.lessons__list 
+                li.lessons__item
+                    img(src="./images/english.jpg" alt="Основы английского языка").d-lg-block.d-none
+                    .lessons__item-title Основы английского языка
+                    .lessons__item-desc На занятиях малыши учатся без стеснения общаться на новом языке, строить диалоги. Уже в маленьком возрасте ребенок будет иметь представление о языке и сможет общаться на нем с другими. 
+                li.lessons__item
+                    img(src="./images/ashton-bingham-11394.jpg" alt="Спортивные и развивающие секции").d-lg-block.d-none
+                    .lessons__item-title Спортивные и развивающие секции 
+                    .lessons__item-desc Для деток у нас представлен большой выбор спортивных и развивающих секций. У нас есть занятия по футболу, тхэквондо, шахматам, плаванию, хориография, сольфеджио, вокал. 
+                li.lessons__item
+                    img(src="./images/image-from-rawpixel-.jpg" alt="Спортивные и развивающие секции").d-lg-block.d-none
+                    .lessons__item-title Изобразительное мышление
+                    .lessons__item-desc Изобразительное мышление развивает воображение и прививает хороший вкус с детства. Мы учимся рисовать, лепить и многое другое. 
+                li.lessons__item
+                    img(src="./images/Depositphotos_887088.jpg" alt="Спортивные и развивающие секции").d-lg-block.d-none
+                    .lessons__item-title Физкультура
+                    .lessons__item-desc Зарядки и упражнения. Это ежедневные занятия в игровой форме для правильного физического развития детей. 
 block form
-    section.form#form
-        //- +icon('form-decor')
-        .container-xxl.form__container 
-            h2.title.form__title Отзыв 
-                span о&nbsp;конференции
-            p.form__description Уважаемые участники! Поделитесь Вашим мнением о конференции, заполнив небольшую анкету по кнопке ниже:
-            a(href="form.html").form__link.hvr-bounce-to-right Перейти к анкете
-block security
-    section.security#security
-        .container-xxl
-            h2.title.security__title МЕРЫ БЕЗОПАСНОСТИ
-            ul.security__list.justify-content-between.gap-5
-                li.security__item
-                    +icon('grafic')
-                    .security__item-content
-                        .security__item-title График выступлений
-                        .security__item-subtitle График выступлений можете найти в своей секции.
-                li.security__item
-                    +icon('temperature')
-                    .security__item-content
-                        .security__item-title Проверка ТЕМПЕРАТУРЫ
-                        .security__item-subtitle При входе обязательно измерьте температуру. При наличии признаком недомогания сообщите организатором и воздержитесь от контактов с другими участниками.
-                li.security__item
-                    +icon('maska')
-                    .security__item-content
-                        .security__item-title Средства индивидуальной защиты
-                        .security__item-subtitle Обязательно наличие защитной маски и перчаток. На стойке регистрации можно взять новый комплект СИЗ.
-                li.security__item
-                    +icon('hands')
-                    .security__item-content
-                        .security__item-title Дезинфекция поверхностей
-                        .security__item-subtitle Трибуна для выступления обрабатывается после каждого участника дезинфицирующим средством.
+    section.form#form 
+        .container-xxl.form__container
+            h2.form__title Запишитесь на пробный день или экскурсию
+            p.form__desc Прежде чем записать ребенка в группу, можете познакомиться с садиком, его условиями и атмосферой. Оставьте свои контактные данные, мы свяжемся с вами.
+            form(action="") 
+                input(type="text" placeholder="Ваше имя")
+                input(type="tel" placeholder="Ваш телефон")
+                button(type="submit") Отправить
+block faq 
+    section.faq 
+        .container-xxl.faq__container
+            h2.title Частые вопросы
+            p.desc.faq__desc Постарались собрать ответы на частые вопросы от родителей. Чтобы задать интересующий вопрос, нам можно позвонить или написать на почту: 
+                a(href="mailto:info@4udo-sadik.ru") info@4udo-sadik.ru
+            .faq__content 
+                .faq__question.faq__text 
+                    p Вопрос:
+                    span Как записаться в детский садик?
+                .faq__answer.faq__text
+                    p Чудо-Садик
+                    span Чтобы записать ребенка в сад, вы можете оставить заявку на пробное посещение групп, или позвонить нам по телефону: 
+                        a(href="tel:+79037255118") +79037255118
+            .faq__content 
+                .faq__question.faq__text 
+                    p Вопрос:
+                    span Сколько малышей в одной группе?
+                .faq__answer.faq__text
+                    p Чудо-Садик
+                    span В одной группе максимум 8 человек, редко 10. Это максимальное количество человек, чтобы преподаватель мог полноценно уделить время каждому.
+            .faq__content 
+                .faq__question.faq__text 
+                    p Вопрос:
+                    span Учитываете ли вы особое питание для детей?
+                .faq__answer.faq__text
+                    p Чудо-Садик
+                    span Да, вам необходимо рассказать об особенностях питания вашего ребенка, и мы будем готовить еду отдельно.
+            .faq__content 
+                .faq__question.faq__text 
+                    p Вопрос:
+                    span Есть ли в саду детский доктор?
+                .faq__answer.faq__text
+                    p Чудо-Садик
+                    span Да, в детском саду есть детский терапевт, логопед, психолог. Врачи доступны все время, когда дети находятся в саду.
+            .faq__content 
+                .faq__question.faq__text 
+                    p Вопрос:
+                    span Можно ли детям приносить в детский сад свои игрушки?
+                .faq__answer.faq__text
+                    p Чудо-Садик
+                    span Да, вы можете принести свои игрушки, но за их сохранность не отвечают педагоги и другие работники сада.
+            .faq__content 
+                .faq__question.faq__text 
+                    p Вопрос:
+                    span Есть ли на территории охрана и видеонаблюдение?
+                .faq__answer.faq__text
+                    p Чудо-Садик
+                    span Да, безусловно. На территорию вход возможен только через пропускной пункт, где сидит охрана, так же по всей территории садика ведется видеонаблюдение 24/7. 
+block teacher
+    section.teacher
+        .container-xxl.teacher__container
+            h2.title.teacher__title Наши педагоги
+            .teacher__list.row
+                .teacher-item.col-lg-4.col-sm-6.col-12
+                    img(src='./images/gorbatova-o-v-3.jpeg' alt='Горбатова Олеся Васильевна')
+                    p.teacher__name Горбатова Олеся<br>Васильевна
+                        span директор
+                    p.teacher__info 
+                        | Образование: высшее, ученая степень<br>
+                        | Общий стаж: 18 лет<br>
+                        | Стаж по специальности: 10 лет
+                .teacher-item.col-lg-4.col-sm-6.col-12
+                    img(src='./images/artamonova.jpeg' alt='Артамонова Марина Александровна')
+                    p.teacher__name Артамонова Марина<br>Александровна
+                        span методист
+                    p.teacher__info 
+                        | Образование: высшее<br>
+                        | Общий стаж: 22 года<br>
+                        | Стаж по специальности: 20 лет
+                .teacher-item.col-lg-4.col-sm-6.col-12
+                    img(src='./images/miticheva.jpeg' alt='Митичева Мария Сергеевна')
+                    p.teacher__name Митичева Мария<br>Сергеевна
+                        span педагог дополнительного образования
+                    p.teacher__info 
+                        | Образование: высшее<br>
+                        | Общий стаж: 11 лет<br>
+                        | Стаж по специальности: 11 лет
+                .teacher-item.col-lg-4.col-sm-6.col-12
+                    img(src='./images/detkina.jpeg' alt='Митичева Мария Сергеевна')
+                    p.teacher__name Деткина Наталья<br>Федоровна
+                        span педагог дополнительного образования (ИЗО)
+                    p.teacher__info 
+                        | Образование: высшее<br>
+                        | Общий стаж: 25 лет<br>
+                        | Стаж по специальности: 13 лет<br>
+                        | Логопед 13 лет
+                .teacher-item.col-lg-4.col-sm-6.col-12
+                    img(src='./images/vahrusheva.jpeg' alt='Митичева Мария Сергеевна')
+                    p.teacher__name Вахрушева Евгения<br>Павловна
+                        span педагог дополнительного образования (Английский язык)
+                    p.teacher__info 
+                        | Образование: высшее<br>
+                        | Общий стаж: 7 лет<br>
+                        | Стаж по специальности: 5 лет
+                .teacher-item.col-lg-4.col-sm-6.col-12
+                    img(src='./images/mashkova.jpeg' alt='Митичева Мария Сергеевна')
+                    p.teacher__name Машкова Ирина<br>Александровна
+                        span педагог-психолог
+                    p.teacher__info 
+                        | Образование: высшее<br>
+                        | Общий стаж: 19 лет<br>
+                        | Стаж по специальности: 12 лет
+                .teacher-item.col-lg-4.col-sm-6.col-12
+                    img(src='./images/safronova.jpeg' alt='Митичева Мария Сергеевна')
+                    p.teacher__name Сафронова Жанна<br>Валерьевна
+                        span учитель-логопед
+                    p.teacher__info 
+                        | Образование: высшее<br>
+                        | Общий стаж: 22 лет<br>
+                        | Стаж по специальности: 19 лет
+                .teacher-item.col-lg-4.col-sm-6.col-12
+                    img(src='./images/zborovskay.jpeg' alt='Митичева Мария Сергеевна')
+                    p.teacher__name Зборовская Татьяна<br>Григорьевна
+                        span музыкальный руководитель
+                    p.teacher__info 
+                        | Образование: высшее<br>
+                        | Общий стаж: 25 лет<br>
+                        | Стаж по специальности: 23 года
+                .teacher-item.col-lg-4.col-sm-6.col-12
+                    img(src='./images/bikova.jpeg' alt='Митичева Мария Сергеевна')
+                    p.teacher__name Быкова Елена<br>Владимировна
+                        span учитель-логопед
+                    p.teacher__info 
+                        | Образование: высшее<br>
+                        | Общий стаж: 39 лет<br>
+                        | Стаж по специальности: 25 лет
+block licenses
+    section.licenses
+        .container-xxl.licenses__container
+            h2.title.licenses__title Лицензии
+            .licenses__list.row
+                .licenses__item.col-lg-4.col-sm-6.col-12
+                    .licenses__content
+                        img(src='./images/__2021-09-11__100713.png' alt="Медицинская лицензия")
+                        | Медицинская лицензия
+                .licenses__item.col-lg-4.col-sm-6.col-12
+                    .licenses__content
+                        img(src='./images/__2021-09-11__100649.png' alt="Образовательная лицензия")
+                        | Образовательная лицензия
+                .licenses__item.col-lg-4.col-sm-6.col-12
+                    .licenses__content
+                        img(src='./images/__2021-09-11__101214.png' alt="Медицинская лицензия")
+                        | Медицинская лицензия
+block how
+    section.how
+        .container-xxl.how__container
+            h2.title.how__title Как связаться с&nbsp;нами
+            .how__list.row 
+                .how__item.col-md-4.col-12
+                    .how__item-content
+                        img(src='./images/cont__1__4.svg' alt="позвоните нам")
+                        p Связь
+                            span Позвоните нам: 
+                                a(href="tel:+79037255118") +7 (903) 725-51-18 
+                                | или оставьте заявку на сайте
+                .how__item.col-md-4.col-12
+                    .how__item-content
+                        img(src='./images/cont__1__2.svg' alt="Адрес")
+                        p Адрес
+                            span Москва, 
+                                a(href="#")._red ул. Крылатская д.40 стр 74
+                .how__item.col-md-4.col-12
+                    .how__item-content
+                        img(src='./images/cont__1__3.svg' alt="Парковка")
+                        p Парковка
+                            span Собственная парковка, где вы можете оставить машину.
+            .how__map#map
+                <script src="https://api-maps.yandex.ru/2.1/?apikey=5d4e9d50-faf0-45d0-9fa2-5385313a0f49&amp;lang=ru_RU"></script>
+block social 
+    .social
+        .container-xxl.social__container
+            p За нашими обновлениями и новостями можно следить в социальных сетях 
+            a(href="https://www.instagram.com/chudosadik4/")
+                <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 30 30" xml:space="preserve"><desc>Instagram</desc><path style="fill:#e61e53;" d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z"></path><path style="fill:#e61e53;" d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z"></path><path style="fill:#e61e53;" d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z"></path></svg>
 block modal
-    +modal()
-        img.img-fluid.modal__img(src="./images/success.png" alt="Успешно")
-        p.modal__text Ваш отзыв успешно отправлен!
-            span Спасибо за уделенное время!
-
-        img.img-fluid.modal__img(src="./images/unsuccess.png" alt="Ошибка")
-        p.modal__text Извините, при отправке произошла ошибка!
-            span Пожалуйста, попробуйте заполнить форму еще раз
-
-        button(data-id="closemodal").modal__btn Вернуться на сайт
+    .modal.modal-js
+        .modal__container 
+            div(data-id="closemodal").modal__close-button
+            img(src='./images/chs-2338-scaled.jpeg' alt='').img-js
+            .arrow-left.arrow.arrow-left-js
+            .arrow-right.arrow.arrow-right-js

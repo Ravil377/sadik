@@ -1,0 +1,54 @@
+.teacher {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.teacher__title {
+    margin-bottom: 45px;
+}
+.teacher-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .teacher__name {
+        line-height: 1.35;
+        font-weight: 600;
+        color: #000;
+        text-align: center;
+        @include responsive-tlt(18px, 22px);
+
+        @media (min-width: 768px) {
+            font-size: 22px;
+        }
+        span {
+            font-weight: 300;
+            display: block;
+            margin-top: 10px;
+            color: #7a7a7a;
+            @include responsive-tlt(12px, 14px);
+            line-height: 1.55;
+            text-transform: uppercase;
+            @media (min-width: 768px) {
+                font-size: 14px;
+            }
+        }
+    }
+}
+.teacher__info {
+    @include responsive-tlt(12px, 15px);
+    line-height: 1.55;
+    font-weight: 300;
+    text-align: center;
+    color: #000;
+    @media (min-width: 768px) {
+        font-size: 15px;
+    }
+}

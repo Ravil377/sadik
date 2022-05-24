@@ -1,0 +1,24 @@
+.licenses {
+    padding-top: 135px;
+    padding-bottom: 150px;
+    background-color: #f4f8fc;
+}
+.licenses__title {
+    margin-bottom: 60px;
+}
+.licenses__item {
+    margin-bottom: 40px;
+}
+.licenses__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        max-width: 250px;
+        margin-bottom: 40px;
+    }
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 300;
+}

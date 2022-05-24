@@ -1,10 +1,17 @@
 .title
-    font-weight: 900
-    font-size: 28px
-    line-height: 40px
-    text-transform: uppercase
-    color: $text
-    
-    @media (min-width: 576px)
-        font-size: 48px
-        line-height: 66px
+    font-size: 42px
+    @include responsive-tlt(30px, 42px)
+    line-height: 1.23
+    font-weight: 600
+    color: #000
+    text-align: center
+
+.desc
+    font-size: 24px
+    line-height: 1.5
+    font-weight: 300
+    color: #000
+    max-width: 560px
+    text-align: center
+    margin: 0 auto
+    margin-top: 40px

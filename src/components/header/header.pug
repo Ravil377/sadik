@@ -1,24 +1,11 @@
-header.header.pt-lg-25.pt-1
-    .container-xxl
-        .row.align-items-center.mb-lg-20.justify-content-lg-between.justify-content-sm-center.justify-content-between.header__container
-            //- .col-3.d-lg-none
-            //-     include ../hamburger/hamburger
-
-            .col-xxl-5.col
-                .logo.header__logo
-                    include ../logo/logo
-
-            .col-xxl-7.col-auto.header__connection-container
-                ul.header__connection
-                    li.d-none.d-lg-flex
-                        a(href="tel:+79656693777" title='+7 965 66-93-7777') +7 965 66-93-7777
-                    li.d-none.d-lg-flex
-                        a(href="mailto:NORKA@bn.rosneft.ru" title='NORKA@bn.rosneft.ru') NORKA@bn.rosneft.ru
-                    li
-                        a(href="#").header__connection-link_bg.--align-center
-                            +icon('online').header__connection-icon
-                            p.d-none.d-lg-block.mb-0 Прямая трансляция
-                .d-lg-none
-                    include ../hamburger/hamburger
-        .row.justify-content-center
-            include ../mainmenu/mainmenu
+header.header
+    .container-xxl.header__container
+        h1.header__title Детский садик "Чудо&nbsp;-&nbsp;Садик"
+        .header__contacts
+            .header__tel
+                p Телефон: 
+                    a(href="tel:+79037255118") +7 (903) 725-51-18
+                p E-mail: 
+                    a(href="mailto:info@4udo-sadik.ru") info@4udo-sadik.ru
+            .header__address 
+                p Адрес: 121609, Москва ул. Крылатская д.40 стр 74

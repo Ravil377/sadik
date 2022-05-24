@@ -1,0 +1,76 @@
+.welcome  {
+    display: flex;
+    @media (min-width: 1200px) {
+        height: 550px;
+    }
+
+}
+.welcome__container {
+    display: flex;
+    flex-direction: column;
+    
+    @media (max-width: 992px) {
+        max-width: 660px;    
+    }
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+}
+.welcome__image {
+    width: 100%;
+    img {
+        width: 100%;
+        object-fit: contain;
+        @media (min-width: 1200px) {
+            min-width: 660px;
+        }
+    }
+}
+.welcome__title {
+    background-color: rgb(184, 201, 34);
+    padding: 60px 30px;
+    color:#ffffff;
+
+    @include responsive-tlt(36px, 52px);
+    line-height: 1.23;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 20px;
+    @media (min-width: 576px) {
+        font-size: 52px;
+    }   
+    @media (min-width: 992px) {
+        transform: translateY(40px) translateX(40px);
+        margin-left: -40px;
+        width: 70%;
+        margin-bottom: 0;
+    }
+    @media (min-width: 1200px) {
+        padding: 90px 60px;    
+        padding-right: 80px;
+    }
+    span {
+        display: block;
+        font-size: 20px;
+        line-height: 1.55;
+        margin-top: 38px;
+        font-weight: 300;
+    }
+    a {
+        margin-top: 28px;
+        display: block;
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 1.55;
+        font-weight: 700;
+        text-decoration: none;
+        cursor: pointer;
+        transition: .4s;
+        &:hover {
+            color: black;
+        }
+        @media (min-width: 1200px) {
+            margin-top: 48px;
+        }
+    }
+}
