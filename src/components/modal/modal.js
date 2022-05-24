@@ -3,7 +3,7 @@ const modalCloseBtns = document.querySelectorAll('[data-id="closemodal"]');
 const modal = document.querySelector('.modal-js');
 const arrowLeft = modal.querySelector('.arrow-left-js');
 const arrowRight = modal.querySelector('.arrow-right-js');
-const imgModal = modal.querySelector('.img-js');
+let imgModal = modal.querySelector('.img-js');
 let currentImg;
 
 const closeModal = () => {
@@ -24,6 +24,7 @@ const checkPressOverlay = (e) => {
 };
   
 const replaceImage = (img) => {
+    console.log(img.src);
     imgModal.src = img.src;
     imgModal.alt = img.alt;
     currentImg = img;
@@ -31,9 +32,9 @@ const replaceImage = (img) => {
 
 const openModal = (e) => {  
     const img = e.target;  
+    
     modal.classList.add('modal_opened');
     modalCloseBtns.forEach(btn => btn.addEventListener('click', closeModal));
-    currentImg = img;
     replaceImage(img);
 }
 

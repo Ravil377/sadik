@@ -17,5 +17,10 @@
         object-fit: cover;
         padding: 5px;
         height: 100%;
+        cursor: pointer;
+        transition: .4s;
+        &:hover {
+            opacity: .7;
+        }
     }
 }
